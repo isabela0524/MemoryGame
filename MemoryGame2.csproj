@@ -1,0 +1,686 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ViewModels\SignInViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\animale\caine.png" />
+    <None Remove="Images\animale\cal.png" />
+    <None Remove="Images\animale\camila.png" />
+    <None Remove="Images\animale\cangur.png" />
+    <None Remove="Images\animale\capra.png" />
+    <None Remove="Images\animale\curcan.png" />
+    <None Remove="Images\animale\elefant.png" />
+    <None Remove="Images\animale\flamingo.png" />
+    <None Remove="Images\animale\flori\albastrele.jpg" />
+    <None Remove="Images\animale\flori\branduse.jpg" />
+    <None Remove="Images\animale\flori\bujor.png" />
+    <None Remove="Images\animale\flori\cactus.png" />
+    <None Remove="Images\animale\flori\cala.jpg" />
+    <None Remove="Images\animale\flori\crin.png" />
+    <None Remove="Images\animale\flori\crizanteme.jpg" />
+    <None Remove="Images\animale\flori\floarecolt.jpg" />
+    <None Remove="Images\animale\flori\frezie.jpg" />
+    <None Remove="Images\animale\flori\garoafa.png" />
+    <None Remove="Images\animale\flori\gerbera.jpg" />
+    <None Remove="Images\animale\flori\ghiocel.png" />
+    <None Remove="Images\animale\flori\gladiola.png" />
+    <None Remove="Images\animale\flori\hortensie.jpg" />
+    <None Remove="Images\animale\flori\iasomie.jpg" />
+    <None Remove="Images\animale\flori\iris.jpg" />
+    <None Remove="Images\animale\flori\lacramioara.png" />
+    <None Remove="Images\animale\flori\lalea.png" />
+    <None Remove="Images\animale\flori\lavanda.png" />
+    <None Remove="Images\animale\flori\liliac.jpg" />
+    <None Remove="Images\animale\flori\mac.png" />
+    <None Remove="Images\animale\flori\margarete.png" />
+    <None Remove="Images\animale\flori\narcise.png" />
+    <None Remove="Images\animale\flori\nasturei.jpg" />
+    <None Remove="Images\animale\flori\orhidee.jpg" />
+    <None Remove="Images\animale\flori\panselute.jpg" />
+    <None Remove="Images\animale\flori\papadie.png" />
+    <None Remove="Images\animale\flori\petunie.jpg" />
+    <None Remove="Images\animale\flori\toporasi.jpg" />
+    <None Remove="Images\animale\flori\trandafir.png" />
+    <None Remove="Images\animale\flori\zambila.png" />
+    <None Remove="Images\animale\gaina.png" />
+    <None Remove="Images\animale\gasca.png" />
+    <None Remove="Images\animale\girafa.png" />
+    <None Remove="Images\animale\hipo.png" />
+    <None Remove="Images\animale\iepure.png" />
+    <None Remove="Images\animale\koala.png" />
+    <None Remove="Images\animale\leu.png" />
+    <None Remove="Images\animale\lup.png" />
+    <None Remove="Images\animale\magar.png" />
+    <None Remove="Images\animale\maimuta.png" />
+    <None Remove="Images\animale\oaie.png" />
+    <None Remove="Images\animale\peste.png" />
+    <None Remove="Images\animale\pinguin.png" />
+    <None Remove="Images\animale\pisica.png" />
+    <None Remove="Images\animale\porc.png" />
+    <None Remove="Images\animale\rata.png" />
+    <None Remove="Images\animale\sarpe.png" />
+    <None Remove="Images\animale\strut.png" />
+    <None Remove="Images\animale\tigru.png" />
+    <None Remove="Images\animale\urs.png" />
+    <None Remove="Images\animale\vaca.png" />
+    <None Remove="Images\animale\veverita.png" />
+    <None Remove="Images\animale\vulpe.png" />
+    <None Remove="Images\animale\zebra.png" />
+    <None Remove="Images\back.png" />
+    <None Remove="Images\flori\albastrele.jpg" />
+    <None Remove="Images\flori\animale\caine.png" />
+    <None Remove="Images\flori\animale\cal.png" />
+    <None Remove="Images\flori\animale\camila.png" />
+    <None Remove="Images\flori\animale\cangur.png" />
+    <None Remove="Images\flori\animale\capra.png" />
+    <None Remove="Images\flori\animale\curcan.png" />
+    <None Remove="Images\flori\animale\elefant.png" />
+    <None Remove="Images\flori\animale\flamingo.png" />
+    <None Remove="Images\flori\animale\flori\albastrele.jpg" />
+    <None Remove="Images\flori\animale\flori\branduse.jpg" />
+    <None Remove="Images\flori\animale\flori\bujor.png" />
+    <None Remove="Images\flori\animale\flori\cactus.png" />
+    <None Remove="Images\flori\animale\flori\cala.jpg" />
+    <None Remove="Images\flori\animale\flori\crin.png" />
+    <None Remove="Images\flori\animale\flori\crizanteme.jpg" />
+    <None Remove="Images\flori\animale\flori\floarecolt.jpg" />
+    <None Remove="Images\flori\animale\flori\frezie.jpg" />
+    <None Remove="Images\flori\animale\flori\garoafa.png" />
+    <None Remove="Images\flori\animale\flori\gerbera.jpg" />
+    <None Remove="Images\flori\animale\flori\ghiocel.png" />
+    <None Remove="Images\flori\animale\flori\gladiola.png" />
+    <None Remove="Images\flori\animale\flori\hortensie.jpg" />
+    <None Remove="Images\flori\animale\flori\iasomie.jpg" />
+    <None Remove="Images\flori\animale\flori\iris.jpg" />
+    <None Remove="Images\flori\animale\flori\lacramioara.png" />
+    <None Remove="Images\flori\animale\flori\lalea.png" />
+    <None Remove="Images\flori\animale\flori\lavanda.png" />
+    <None Remove="Images\flori\animale\flori\liliac.jpg" />
+    <None Remove="Images\flori\animale\flori\mac.png" />
+    <None Remove="Images\flori\animale\flori\margarete.png" />
+    <None Remove="Images\flori\animale\flori\narcise.png" />
+    <None Remove="Images\flori\animale\flori\nasturei.jpg" />
+    <None Remove="Images\flori\animale\flori\orhidee.jpg" />
+    <None Remove="Images\flori\animale\flori\panselute.jpg" />
+    <None Remove="Images\flori\animale\flori\papadie.png" />
+    <None Remove="Images\flori\animale\flori\petunie.jpg" />
+    <None Remove="Images\flori\animale\flori\toporasi.jpg" />
+    <None Remove="Images\flori\animale\flori\trandafir.png" />
+    <None Remove="Images\flori\animale\flori\zambila.png" />
+    <None Remove="Images\flori\animale\gaina.png" />
+    <None Remove="Images\flori\animale\gasca.png" />
+    <None Remove="Images\flori\animale\girafa.png" />
+    <None Remove="Images\flori\animale\hipo.png" />
+    <None Remove="Images\flori\animale\iepure.png" />
+    <None Remove="Images\flori\animale\koala.png" />
+    <None Remove="Images\flori\animale\leu.png" />
+    <None Remove="Images\flori\animale\lup.png" />
+    <None Remove="Images\flori\animale\magar.png" />
+    <None Remove="Images\flori\animale\maimuta.png" />
+    <None Remove="Images\flori\animale\oaie.png" />
+    <None Remove="Images\flori\animale\peste.png" />
+    <None Remove="Images\flori\animale\pinguin.png" />
+    <None Remove="Images\flori\animale\pisica.png" />
+    <None Remove="Images\flori\animale\porc.png" />
+    <None Remove="Images\flori\animale\rata.png" />
+    <None Remove="Images\flori\animale\sarpe.png" />
+    <None Remove="Images\flori\animale\strut.png" />
+    <None Remove="Images\flori\animale\tigru.png" />
+    <None Remove="Images\flori\animale\urs.png" />
+    <None Remove="Images\flori\animale\vaca.png" />
+    <None Remove="Images\flori\animale\veverita.png" />
+    <None Remove="Images\flori\animale\vulpe.png" />
+    <None Remove="Images\flori\animale\zebra.png" />
+    <None Remove="Images\flori\branduse.jpg" />
+    <None Remove="Images\flori\bujor.png" />
+    <None Remove="Images\flori\cactus.png" />
+    <None Remove="Images\flori\cala.jpg" />
+    <None Remove="Images\flori\crin.png" />
+    <None Remove="Images\flori\crizanteme.jpg" />
+    <None Remove="Images\flori\floarecolt.jpg" />
+    <None Remove="Images\flori\frezie.jpg" />
+    <None Remove="Images\flori\garoafa.png" />
+    <None Remove="Images\flori\gerbera.jpg" />
+    <None Remove="Images\flori\ghiocel.png" />
+    <None Remove="Images\flori\gladiola.png" />
+    <None Remove="Images\flori\hortensie.jpg" />
+    <None Remove="Images\flori\iasomie.jpg" />
+    <None Remove="Images\flori\iris.jpg" />
+    <None Remove="Images\flori\lacramioara.png" />
+    <None Remove="Images\flori\lalea.png" />
+    <None Remove="Images\flori\lavanda.png" />
+    <None Remove="Images\flori\liliac.jpg" />
+    <None Remove="Images\flori\mac.png" />
+    <None Remove="Images\flori\margarete.png" />
+    <None Remove="Images\flori\narcise.png" />
+    <None Remove="Images\flori\nasturei.jpg" />
+    <None Remove="Images\flori\orhidee.jpg" />
+    <None Remove="Images\flori\panselute.jpg" />
+    <None Remove="Images\flori\papadie.png" />
+    <None Remove="Images\flori\petunie.jpg" />
+    <None Remove="Images\flori\toporasi.jpg" />
+    <None Remove="Images\flori\trandafir.png" />
+    <None Remove="Images\flori\zambila.png" />
+    <None Remove="Images\fructe\afine.png" />
+    <None Remove="Images\fructe\alune.png" />
+    <None Remove="Images\fructe\ananas.png" />
+    <None Remove="Images\fructe\avocado.png" />
+    <None Remove="Images\fructe\banana.png" />
+    <None Remove="Images\fructe\caise.jpg" />
+    <None Remove="Images\fructe\capsuni.png" />
+    <None Remove="Images\fructe\cirese.png" />
+    <None Remove="Images\fructe\cocos.png" />
+    <None Remove="Images\fructe\dragonfruit.png" />
+    <None Remove="Images\fructe\dude.png" />
+    <None Remove="Images\fructe\fructulpasiunii.png" />
+    <None Remove="Images\fructe\grefa.png" />
+    <None Remove="Images\fructe\guava.png" />
+    <None Remove="Images\fructe\gutuie.png" />
+    <None Remove="Images\fructe\kaki.jpg" />
+    <None Remove="Images\fructe\kiwi.png" />
+    <None Remove="Images\fructe\lamaie.png" />
+    <None Remove="Images\fructe\mango.png" />
+    <None Remove="Images\fructe\mar.png" />
+    <None Remove="Images\fructe\merisoare.png" />
+    <None Remove="Images\fructe\mure.png" />
+    <None Remove="Images\fructe\nectarine.png" />
+    <None Remove="Images\fructe\nuca.png" />
+    <None Remove="Images\fructe\papaya.png" />
+    <None Remove="Images\fructe\para.png" />
+    <None Remove="Images\fructe\pepene.png" />
+    <None Remove="Images\fructe\portocala.png" />
+    <None Remove="Images\fructe\prune.png" />
+    <None Remove="Images\fructe\rodie.png" />
+    <None Remove="Images\fructe\struguri.png" />
+    <None Remove="Images\fructe\zmeura.png" />
+    <None Remove="Images\profile2.jpg" />
+    <None Remove="Images\profile3.jpg" />
+    <None Remove="Images\profile4.jpg" />
+    <None Remove="Images\profile5.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\animale\caine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\cal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\camila.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\cangur.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\capra.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\curcan.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\elefant.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\flamingo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\flori\albastrele.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\flori\branduse.jpg" />
+    <Resource Include="Images\animale\flori\bujor.png" />
+    <Resource Include="Images\animale\flori\cactus.png" />
+    <Resource Include="Images\animale\flori\cala.jpg" />
+    <Resource Include="Images\animale\flori\crin.png" />
+    <Resource Include="Images\animale\flori\crizanteme.jpg" />
+    <Resource Include="Images\animale\flori\floarecolt.jpg" />
+    <Resource Include="Images\animale\flori\frezie.jpg" />
+    <Resource Include="Images\animale\flori\garoafa.png" />
+    <Resource Include="Images\animale\flori\gerbera.jpg" />
+    <Resource Include="Images\animale\flori\ghiocel.png" />
+    <Resource Include="Images\animale\flori\gladiola.png" />
+    <Resource Include="Images\animale\flori\hortensie.jpg" />
+    <Resource Include="Images\animale\flori\iasomie.jpg" />
+    <Resource Include="Images\animale\flori\iris.jpg" />
+    <Resource Include="Images\animale\flori\lacramioara.png" />
+    <Resource Include="Images\animale\flori\lalea.png" />
+    <Resource Include="Images\animale\flori\lavanda.png" />
+    <Resource Include="Images\animale\flori\liliac.jpg" />
+    <Resource Include="Images\animale\flori\mac.png" />
+    <Resource Include="Images\animale\flori\margarete.png" />
+    <Resource Include="Images\animale\flori\narcise.png" />
+    <Resource Include="Images\animale\flori\nasturei.jpg" />
+    <Resource Include="Images\animale\flori\orhidee.jpg" />
+    <Resource Include="Images\animale\flori\panselute.jpg" />
+    <Resource Include="Images\animale\flori\papadie.png" />
+    <Resource Include="Images\animale\flori\petunie.jpg" />
+    <Resource Include="Images\animale\flori\toporasi.jpg" />
+    <Resource Include="Images\animale\flori\trandafir.png" />
+    <Resource Include="Images\animale\flori\zambila.png" />
+    <Resource Include="Images\animale\gaina.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\gasca.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\girafa.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\hipo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\iepure.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\koala.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\leu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\lup.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\magar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\maimuta.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\oaie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\peste.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\pinguin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\pisica.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\porc.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\rata.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\sarpe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\strut.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\tigru.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\urs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\vaca.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\veverita.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\vulpe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\animale\zebra.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\back.png" />
+    <Resource Include="Images\flori\albastrele.jpg" />
+    <Resource Include="Images\flori\animale\caine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\cal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\camila.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\cangur.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\capra.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\curcan.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\elefant.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\flamingo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\flori\albastrele.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\flori\branduse.jpg" />
+    <Resource Include="Images\flori\animale\flori\bujor.png" />
+    <Resource Include="Images\flori\animale\flori\cactus.png" />
+    <Resource Include="Images\flori\animale\flori\cala.jpg" />
+    <Resource Include="Images\flori\animale\flori\crin.png" />
+    <Resource Include="Images\flori\animale\flori\crizanteme.jpg" />
+    <Resource Include="Images\flori\animale\flori\floarecolt.jpg" />
+    <Resource Include="Images\flori\animale\flori\frezie.jpg" />
+    <Resource Include="Images\flori\animale\flori\garoafa.png" />
+    <Resource Include="Images\flori\animale\flori\gerbera.jpg" />
+    <Resource Include="Images\flori\animale\flori\ghiocel.png" />
+    <Resource Include="Images\flori\animale\flori\gladiola.png" />
+    <Resource Include="Images\flori\animale\flori\hortensie.jpg" />
+    <Resource Include="Images\flori\animale\flori\iasomie.jpg" />
+    <Resource Include="Images\flori\animale\flori\iris.jpg" />
+    <Resource Include="Images\flori\animale\flori\lacramioara.png" />
+    <Resource Include="Images\flori\animale\flori\lalea.png" />
+    <Resource Include="Images\flori\animale\flori\lavanda.png" />
+    <Resource Include="Images\flori\animale\flori\liliac.jpg" />
+    <Resource Include="Images\flori\animale\flori\mac.png" />
+    <Resource Include="Images\flori\animale\flori\margarete.png" />
+    <Resource Include="Images\flori\animale\flori\narcise.png" />
+    <Resource Include="Images\flori\animale\flori\nasturei.jpg" />
+    <Resource Include="Images\flori\animale\flori\orhidee.jpg" />
+    <Resource Include="Images\flori\animale\flori\panselute.jpg" />
+    <Resource Include="Images\flori\animale\flori\papadie.png" />
+    <Resource Include="Images\flori\animale\flori\petunie.jpg" />
+    <Resource Include="Images\flori\animale\flori\toporasi.jpg" />
+    <Resource Include="Images\flori\animale\flori\trandafir.png" />
+    <Resource Include="Images\flori\animale\flori\zambila.png" />
+    <Resource Include="Images\flori\animale\gaina.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\gasca.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\girafa.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\hipo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\iepure.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\koala.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\leu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\lup.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\magar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\maimuta.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\oaie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\peste.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\pinguin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\pisica.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\porc.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\rata.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\sarpe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\strut.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\tigru.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\urs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\vaca.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\veverita.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\vulpe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\animale\zebra.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\branduse.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\bujor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\cactus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\cala.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\crin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\crizanteme.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\floarecolt.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\frezie.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\garoafa.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\gerbera.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\ghiocel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\gladiola.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\hortensie.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\iasomie.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\iris.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\lacramioara.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\lalea.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\lavanda.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\liliac.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\mac.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\margarete.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\narcise.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\nasturei.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\orhidee.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\panselute.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\papadie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\petunie.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\toporasi.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\trandafir.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\flori\zambila.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\afine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\alune.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\ananas.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\avocado.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\banana.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\caise.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\capsuni.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\cirese.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\cocos.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\dragonfruit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\dude.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\fructulpasiunii.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\grefa.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\guava.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\gutuie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\kaki.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\kiwi.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\lamaie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\mango.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\mar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\merisoare.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\mure.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\nectarine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\nuca.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\papaya.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\para.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\pepene.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\portocala.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\prune.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\rodie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\struguri.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\fructe\zmeura.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\profile2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\profile3.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\profile4.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\profile5.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="ViewModels\SignInViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Models\GameStateModel.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Images\**\*.*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+</Project>
